@@ -1,0 +1,223 @@
+body{
+    font-family: 'Comfortaa', cursive;
+    max-width: 100vw;
+    /* overflow-x: hidden; */
+}
+/* navbar */
+
+.navbar  {
+  
+    background-color: rgba(54, 54, 54, 0.5);
+    font-size: 15px;
+    padding: 0% 8%;
+}
+
+.navbar-brand{
+    color: #dadada;
+    font-size: 24px;
+}
+.navbar-collapse{
+    flex-grow: 0;
+}
+.navbar-dark .navbar-nav .active>.nav-link{
+    color: #DA4453;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #dadada;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #DA4453;
+}
+/* slider */
+.carousel-inner{
+    height: 700px;
+    background-size: cover;
+}
+.carousel-item::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.7);
+    z-index: 2;
+
+}
+.main-text{
+    position: absolute;
+    top: 60%; 
+    left: 40%;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 200;
+    -webkit-transform: translate(-50%,-50%);    
+    -ms-transform: translate(-50%,-50%);        
+    transform: translate(-50%,-50%);
+    z-index: 3;
+  
+}
+.main-text h1{
+    
+    font-size: 100px;
+    color: #dadada;
+}
+.main-text h2{
+    font-size: 40px;
+    color: #dadada;
+}
+
+/* about us */
+.sect-about-us{
+    padding: 8%;
+    background-color: #fff;
+}
+.sect-about-us h2{
+    text-align: center;
+    font-family: 'Caveat';
+    font-size: 50px;
+    color: #DA4453
+}
+.about-us{
+    
+    padding: 20px 0 0 0; 
+    display: flex;
+    color: #868686;
+    font-size: 20px;
+}
+.about-us img{
+    height: 450px;
+    margin:0 100px 0 0;
+}
+
+/* parrallax */
+.parallax-window{
+    height: 400px;
+}
+
+/* Section why */
+.container{
+    display: flex;
+}
+.with-text{
+    width: 33%;
+}
+.display-4 span{
+    color: #DA4453;
+}
+
+.with-cartd{
+    padding-left:60px; 
+}
+.card-row{
+    display: flex;
+}
+
+
+.cards{
+    display: flex;
+    /* width: 50%; */
+}
+.cards h3{
+    font-size: 25px;
+}
+
+.cards div{
+    padding-top: 40px ;
+    margin-left: 20px;
+}
+
+/* reviews */
+#testimonials{
+    text-align: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+#testimonials h2{
+    color: #DA4453;
+    
+}
+/* Contacts */
+
+.contact{
+    padding:150px 0 80px ;
+    text-align: center;
+}
+.row{
+    padding: 0 8%;
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 50px;
+}
+.row div{
+    width: 28%;
+}
+
+.contact h2{
+    font-family: 'Caveat';
+    margin-bottom: 70px;
+    font-size: 50px;
+}
+.contact span{
+    color: #DA4453;
+}
+.contact h4{
+    color: #DA4453;
+}
+
+/* Footer */
+footer{
+    padding: 0 8%;
+    display: flex;
+    justify-content:space-between;
+}
+
+footer img{
+    margin: 0 10px;
+}
+
+/* Adaptive */
+@media screen and (max-width:768px){
+    .main-text{
+        display: none;
+    }
+    .carousel-inner{
+        height: 30%;
+        background-size: cover;
+    }
+    .about-us{
+        display: block;
+    }
+    .container{
+        display: block;
+    }
+    .card-row{
+        display: block;
+    }
+
+    .contact{
+        padding:300px 0 80px ;
+    }
+    .with-cartd{
+        padding-left:0px; 
+    }
+    .cards h3{
+        font-size: 20px;
+    }
+    .sect-about-us img{
+        display: none;  
+    }
+    footer{
+        display:block;
+    }
+}
+@media screen and (max-width:1024px){
+
+    .main-text{
+        display: none;
+    }
+    .about-us{
+        display: block;
+    }
+
+}
